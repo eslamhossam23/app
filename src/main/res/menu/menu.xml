@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item1"
+        android:title="Introduction"
+    android:actionLayout="@layout/support_simple_spinner_dropdown_item"
+    android:actionViewClass="com.timprojet.affichagedinformationssuruneimage.ImageView"
+    android:actionProviderClass="android.app.MediaRouteActionProvider"
+    android:checkable="false"
+    android:visible="true"
+    android:enabled="true"
+    android:menuCategory="container"
+    android:orderInCategory="1" />
+    <item android:id="@+id/item2"
+        android:title="Informations utiles"
+        android:titleCondensed="string"
+        android:actionLayout="@layout/support_simple_spinner_dropdown_item"
+        android:actionViewClass="com.timprojet.affichagedinformationssuruneimage.ImageView"
+        android:actionProviderClass="android.app.MediaRouteActionProvider"
+        android:checkable="false"
+        android:visible="true"
+        android:enabled="true"
+        android:menuCategory="container"
+        android:orderInCategory="2" />
+    <item android:id="@+id/item3"
+        android:title="Description"
+        android:titleCondensed="string"
+        android:actionLayout="@layout/support_simple_spinner_dropdown_item"
+        android:actionViewClass="com.timprojet.affichagedinformationssuruneimage.ImageView"
+        android:actionProviderClass="android.app.MediaRouteActionProvider"
+        android:alphabeticShortcut="string"
+        android:numericShortcut="string"
+        android:checkable="false"
+        android:visible="true"
+        android:enabled="true"
+        android:menuCategory="container"
+        android:orderInCategory="3" />
+
+
+
+</menu>
