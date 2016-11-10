@@ -9,10 +9,13 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
+import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class ScreenSlidePagerActivity extends FragmentActivity {
+    public static FragmentActivity fragmentActivity;
+
     /**
      * The number of pages (wizard steps) to show in this demo.
      */
@@ -31,6 +34,7 @@ public class ScreenSlidePagerActivity extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        fragmentActivity = this;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen_slide);
 
@@ -57,7 +61,7 @@ public class ScreenSlidePagerActivity extends FragmentActivity {
      * A simple pager adapter that represents 5 ScreenSlidePageFragment objects, in
      * sequence.
      */
-    private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
+    private static class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
         public ScreenSlidePagerAdapter(FragmentManager fm) {
             super(fm);
         }
@@ -69,9 +73,9 @@ public class ScreenSlidePagerActivity extends FragmentActivity {
             screenSlidePageFragment.setArguments(args);
             switch (position){
                 case 0:  args.putString("title", "Cheops Pyramid");
-                         args.putString("content", "La pyramide de Khéops ou grande pyramide de Gizeh est un monument construit par les Égyptiens de l'Antiquité, formant une pyramide à base carrée. Tombeau présumé du pharaon Khéops, elle fut édifiée il y a plus de 4 500 ans, sous la IVe dynastie, au centre du complexe funéraire de Khéops se situant à Gizeh en Égypte. Elle est la plus grande des pyramides de Gizeh.");
-                         args.putInt("position", position);
-                        return screenSlidePageFragment;
+                    args.putString("content", "La pyramide de Khéops ou grande pyramide de Gizeh est un monument construit par les Égyptiens de l'Antiquité, formant une pyramide à base carrée. Tombeau présumé du pharaon Khéops, elle fut édifiée il y a plus de 4 500 ans, sous la IVe dynastie, au centre du complexe funéraire de Khéops se situant à Gizeh en Égypte. Elle est la plus grande des pyramides de Gizeh.");
+                    args.putInt("position", position);
+                    return screenSlidePageFragment;
                 case 1: args.putString("title", "Informations utiles");
                     args.putString("content", "Commanditaire\tKhéops\n" +
                             "IVe dynastie\n" +

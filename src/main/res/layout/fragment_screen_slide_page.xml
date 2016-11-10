@@ -39,19 +39,6 @@
         android:textAlignment="center"
         />
 
-    <!--<com.timprojet.affichagedinformationssuruneimage.Arrow-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@+id/content"-->
-        <!--android:layout_marginTop="30dp"-->
-       <!--/>-->
-    <!--<com.timprojet.affichagedinformationssuruneimage.Arrow-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:rotation="180"-->
-        <!--/>-->
-
-
 
 
 
